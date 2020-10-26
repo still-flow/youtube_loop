@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube looper</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="looper.css"/>
+    <script src="looper.js"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
+  </head>
+  <body>
+    <div class="page_container">
+      <div class="yt_container">
+        <iframe id="main_player" class="yt_player" type="text/html" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="ui_container">
+        <div class="error hidden" id="error"></div>
+        <div class="buttons">
+          <button id="toggle_loop" disabled>Toggle loop (is off)</button>
+          <button id="mark_start">Mark start</button>
+          <button id="mark_end">Mark end</button>
+        </div>
+        <div class="inputs">
+          <div class="input">begin time: <input type="text" id="t0_input"/></div>
+          <div class="input">end time: <input type="text" id="t1_input"/></div>
+        </div>
+        <div class="explanation">
+          Just a simple video-looping application utilising Youtube's IFrame API.
+          <br/>
+          Currently accepts URLs which extend Youtube's syntax slightly:
+          <br/>
+          ?v={video id}&t={time of start}&t1={time of end} <a id="example" href="">(random-ish example)</a>
+          <br/>
+          To move outside the marked region, e.g. to mark a new one, you need to either pause or disable looping first.
+          <br/>
+          To share your settings, just copy the current URL.
+        </div>
+        <div class="link_muncher">
+          <input placeholder="Insert a Youtube link here" type="text" id="link_input"/>
+          <button id="munch_link">Load new</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #080808;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+.page_container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 400px;
+    min-height: 100%;
+    background: #202020;
+}
+
+.yt_container {
+    position: relative;
+    padding-bottom: calc((9/16) * 100%);
+    height: 0;
+    max-width: 100%;
+}
+
+.yt_container .yt_player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ui_container a:link {
+    color: #c0c0c0;
+}
+
+.ui_container a:hover {
+    color: white;
+}
+
+.ui_container > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.ui_container {
+    padding-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons button {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.link_muncher {
+    display: flex;
+    flex-direction: row;
+}
+
+.link_muncher button {
+    width: 200px;
+    justify-self: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.link_muncher input {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.input {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.input input {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    background: black;
+    padding: 5px;
+    text-align: center;
+}
+
+button, input {
+    padding: 0px;
+}
